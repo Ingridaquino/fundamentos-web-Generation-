@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-haze:#A14A76;
+  --color-pink-cinza: #CDB2AB;
+  --color-pink-400: #F786AA;
+  --color-pink-200: #FFA8A9;
+  --color-pink-100: #FBC2B5;
+}
+
+/*===COR NO SCROLL ====*/
+::-webkit-scrollbar {
+  background:var(--color-pink-400); 
+  width: .7rem; 
+}
+
+::-webkit-scrollbar-thumb {
+ background: var(--color-haze); 
+ border-radius: .7rem;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem de leve na página */
+}
+
+body {
+  color: var(--color-pink-cinza);
+  
+  font-size: 1.6rem;
+  font-family: 'DynaPuff', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+.header {
+  background: var(--color-pink-400) ;
+  height: 12vh;
+  width: 100%;
+  padding: 0.275rem ;
+  margin-bottom: 1rem ;
+
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--color-haze);
+
+}
+
+.header .logo {
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid var(--color-haze);
+  
+  
+  position: relative;
+  top: 2rem;
+}
+
+.header nav ul {
+  display: flex;
+  margin: 2rem auto ;
+}
+
+.header nav ul li {
+  list-style: none;
+  margin-left: 1rem ;
+}
+
+.header nav ul li > a {
+  color: var(--color-haze);
+
+  transition: color 0.1s;
+}
+
+.header nav ul li > a:hover, a:hover {
+  color: var(--color-pink-200);
+}
+
+
+
+.header nav ul li > a:active {
+  color: var(--color-pink-200);
+  font-weight: 700;
+}
+
+.header nav ul li a.current  {
+  color: #CDB2AB;
+}
+
+
+/*MAIN*/
+
+.main {
+  max-width: 1250px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  background: #A14A76;
+  margin-bottom: 2rem;
+  padding: 4rem;
+}
+
+.text-home img {
+  display: flex;
+  margin: 0 auto;
+  border: 2px solid var(--color-pink-200);
+  border-radius: .355rem;
+}
+
+section h2, h3, h4 {  
+  color: var(--color-pink-100);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--color-pink-400);
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#section-video{
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.galeria img {
+  width: 100%;
+  border: 2px solid var(--color-pink-200);
+  border-radius: .355rem;
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: var(--color-pink-200);
+  color: var(--color-haze);
+  height: 9rem;
+  text-align: center;
+  padding: 3rem;
+
+  border-top: 2px solid var(--color-haze);
+}
+
+
+@media(max-width: 760px) {
+  .header .logo {
+    width: 100px;
+  }
+
+  .header nav ul li {
+    margin: 1.2rem;
+  }
+
+}
