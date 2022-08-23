@@ -28,6 +28,9 @@ html {
 }
 
 body {
+  /* background-image: url(../assets/patinhas.svg); */
+  background-image: url(../assets/pata.svg);
+  background-size: 200px;
   color: var(--color-pink-cinza);
   
   font-size: 1.6rem;
@@ -54,7 +57,7 @@ a {
 }
 
 .header .logo {
-  width: 10%;
+  /* width: 100%; */
   border-radius: 50%;
   border: 1px solid var(--color-haze);
   
@@ -107,15 +110,26 @@ a {
 
 section {
   background: #A14A76;
+  background-image: url(../assets/pata.svg);
   margin-bottom: 2rem;
   padding: 4rem;
+  border-radius: 1.5rem;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.home p {
+  text-align:justify;
 }
 
 .text-home img {
-  display: flex;
   margin: 0 auto;
   border: 2px solid var(--color-pink-200);
-  border-radius: .355rem;
+  border-radius: 1.5rem;
+  transform: skewY(-5deg);
 }
 
 section h2, h3, h4 {  
@@ -146,7 +160,8 @@ p {
 .galeria img {
   width: 100%;
   border: 2px solid var(--color-pink-200);
-  border-radius: .355rem;
+  border-radius: 1.5rem;
+
 }
 
 
@@ -159,17 +174,18 @@ p {
   text-align: center;
   padding: 3rem;
 
-  border-top: 2px solid var(--color-haze);
+  border-top: 2px solid var(--color-haze); 
 }
 
 
 @media(max-width: 760px) {
-  .header .logo {
-    width: 100px;
+  .home {
+    grid-template-columns: 1fr;
   }
 
-  .header nav ul li {
-    margin: 1.2rem;
+  .home img {
+    margin-bottom: 2rem;
   }
+  
 
 }
