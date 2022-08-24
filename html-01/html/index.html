@@ -13,19 +13,26 @@
   <title>HTML-01</title>
 </head>
 <body>
+
   <header class="header">
     <img src="../assets/logo.jpg" class="logo">
     <nav>
       <ul>
         <li><a href="#"> Home </a></li>
         <li> <a href="./sobre.html">Sobre</a></li>
+        <li>  
+          <label class="switch">
+            <input id="theme" type="checkbox" class="checkbox" onclick="getTheme()">
+            <div class="slider"></div>
+          </label>
+        </li>
       </ul>
     </nav>
   </header>
   
   <main  class="main">
-    <section class="text-home">
-      <h2> <span> Amora</span> Lee</h2>
+    <section class="text-home section">
+      <h2><span> Amora</span> Lee</h2>
       <div class="home">
         <img src="../assets/amora.jpg" 
           alt="Uma cachorrinha de porte médio" width="70%"/>
@@ -37,10 +44,17 @@
       </div>
     </section>
 
-    <section id="section-video">
+    <section id="section-video" class="section">
       <h4>Link para um vídeo da <span> Amora</span> </h4>
-
       <a href="https://photos.app.goo.gl/1Bq87DtvpSkKxuDo9"  target="_blank" >Amora brincando </a>
+    </section>
+
+    <section>
+      <form action="">
+        <label for="">
+          <input type="text" name="nome">
+        </label>
+      </form>
     </section>
   </main>
 
@@ -48,5 +62,8 @@
   <footer class="footer">
     <p>Todos os direitos reservados &copy;</p>
   </footer>
+
+
+  <script src="../JS/main.js"></script>
 </body>
 </html>
